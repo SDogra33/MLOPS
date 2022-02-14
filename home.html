@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MLOps</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+ 
+  <style>
+    .navbar .navbar-brand-wrapper {
+      width: 5%;
+    }
+ 
+    .navbar .navbar-menu-wrapper {
+      width: 95%;
+    }
+  </style>
+</head>
+ 
+<body>
+  <i class="typcn typcn-delete-outline" id="bannerClose"></i>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row navbar-danger">
+      <div class="navbar-brand-wrapper d-flex justify-content-center bg-danger">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="typcn typcn-th-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+        <a class="navbar-brand brand-logo w-25 d-flex align-items-center" href="home.html">
+          <img class="w-25" src="images/Eli_Lilly.png" alt="logo" />
+          <span class="h6 mb-1 ml-2 font-weight-light text-white">MLOps</span>
+        </a>
+        <ul class="navbar-nav navbar-nav-right ml-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
+              id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-mail mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Guru
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting has been scheduled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Snigdha
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The model is ready for deployment
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Rajesh
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The script is ready
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-0">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
+              id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="typcn typcn-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="typcn typcn-info mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="typcn typcn-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown ml-3">
+            <a class="nav-link align-items-center d-flex border-0" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/faces/OIP (1).jfif" alt="profile" />
+              <p class="mb-0 ml-2">Shivam Dogra</p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="index.html">
+                <i class="typcn typcn-eject text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="typcn typcn-th-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <nav class="navbar-breadcrumb col-xl-12 col-12 d-flex flex-row p-0">
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end w-100">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item ml-0">
+            <h4 class="mb-0">Dashboard</h4>
+          </li>
+          <li class="nav-item">
+            <div class="d-flex align-items-baseline">
+              <p class="mb-0">Home</p>
+              <i class="typcn typcn-chevron-right"></i>
+              <p class="mb-0">Main Dahboard</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-search d-none d-md-block mr-0">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." aria-label="search"
+                aria-describedby="search">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="typcn typcn-zoom"></i>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger" class="bg-danger"><i class="typcn typcn-cog-outline"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close typcn typcn-times"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+          </div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">
+              <i class="typcn typcn-device-desktop menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="typcn typcn-document-text menu-icon"></i>
+              <span class="menu-title">Uploads</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">NodeJS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Python</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Java</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">Excel</a></li>
+              </ul>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+              aria-controls="form-elements">
+              <i class="typcn typcn-film menu-icon"></i>
+              <span class="menu-title">Model Upload</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="AADS-resume-screening-dev/src/app/home/home.component.html">Upload</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="typcn typcn-user-add-outline menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="index.html"> Login </a></li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+ 
+          <div class="row">
+            <div class="col-xl-6 grid-margin stretch-card flex-column">
+              <h5 class="mb-2 text-titlecase mb-4">Statistics</h5>
+              <div class="row">
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <p class="mb-0 text-muted">Predictions per month</p>
+                        <p class="mb-0 text-muted">+1.37%</p>
+                      </div>
+                      <h4>1352</h4>
+                      <canvas id="transactions-chart" class="mt-auto" height="65"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                          <p class="mb-2 text-muted">Baseline</p>
+                          <h6 class="mb-0">563</h6>
+                        </div>
+                        <div>
+                          <p class="mb-2 text-muted">New</p>
+                          <h6 class="mb-0">720</h6>
+                        </div>
+                        <div>
+                          <p class="mb-2 text-muted">PROD</p>
+                          <h6 class="mb-0">5900</h6>
+                        </div>
+                      </div>
+                      <canvas id="sales-chart-a" class="mt-auto" height="65"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row h-100">
+                <div class="col-md-6 stretch-card grid-margin grid-margin-md-0">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="text-muted">Prediction Analytics</p>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="mb-">27632</h3>
+                        <h3 class="mb-">78%</h3>
+                      </div>
+                      <canvas id="sales-chart-b" class="mt-auto" height="38"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row h-100">
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                          <p class="text-muted">CPU</p>
+                          <h4>55%</h4>
+                          <canvas id="cpu-chart" class="mt-auto"></canvas>
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                          <p class="text-muted">Memory</p>
+                          <h4>123 GB</h4>
+                          <canvas id="memory-chart" class="mt-auto"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 grid-margin stretch-card flex-column">
+              <h5 class="mb-2 text-titlecase mb-4">Model statistics</h5>
+              <div class="row h-100">
+                <div class="col-md-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start flex-wrap">
+                        <div>
+                          <p class="mb-3">Monthly Increase</p>
+                          <h3>67842</h3>
+                        </div>
+                        <div id="income-chart-legend" class="d-flex flex-wrap mt-1 mt-md-0"></div>
+                      </div>
+                      <canvas id="income-chart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="row">
+            <div class="col-xl-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body border-bottom">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-2 mb-md-0 text-uppercase font-weight-medium">Overall Statistics</h6>
+                    <div class="dropdown">
+                      <button class="btn bg-white p-0 pb-1 text-muted btn-sm dropdown-toggle" type="button"
+                        id="dropdownMenuSizeButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Last 30 days
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3">
+                        <a class="dropdown-item" href="#">Last 1 day</a>
+                        <a class="dropdown-item" href="#">Last 7 days</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="sales-chart-c" class="mt-2"></canvas>
+                  <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 mt-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                      <p class="text-muted">Model Deployed</p>
+                      <h5>492</h5>
+                      <div class="d-flex align-items-baseline">
+                        <p class="text-success mb-0">0.5%</p>
+                        <i class="typcn typcn-arrow-up-thick text-success"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                      <p class="text-muted">Predictions</p>
+                      <h5>87k</h5>
+                      <div class="d-flex align-items-baseline">
+                        <p class="text-success mb-0">0.8%</p>
+                        <i class="typcn typcn-arrow-up-thick text-success"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                      <p class="text-muted">Failiures</p>
+                      <h5>882</h5>
+                      <div class="d-flex align-items-baseline">
+                        <p class="text-danger mb-0">-04%</p>
+                        <i class="typcn typcn-arrow-down-thick text-danger"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body border-bottom">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <h6 class="mb-2 mb-md-0 text-uppercase font-weight-medium">Feature Details</h6>
+                    <div class="dropdown">
+                      <button class="btn bg-white p-0 pb-1 text-muted btn-sm dropdown-toggle" type="button"
+                        id="dropdownMenuSizeButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Last 7 days
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton4">
+                        <a class="dropdown-item" href="#">Last 1 day</a>
+                        <a class="dropdown-item" href="#">Last 30 days</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="sales-chart-d" height="320"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="table-responsive pt-3">
+                  <table class="table table-striped project-orders-table">
+                    <thead>
+                      <tr>
+                        <th class="ml-5">ID</th>
+                        <th>Model Name</th>
+                        <th>Owner</th>
+                        <th>Deployment Date</th>
+                        <th>Importance </th>
+                        <th>Environmental</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#D1</td>
+                        <td>Learning Vector Quantization</td>
+                        <td>Beulah Cummings</td>
+                        <td>03 Jan 2022</td>
+                        <td>Critical</td>
+                        <td>DEV</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
+                              Edit
+                              <i class="typcn typcn-edit btn-icon-append"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm btn-icon-text">
+                              Delete
+                              <i class="typcn typcn-delete-outline btn-icon-append"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#D2</td>
+                        <td>Theory of Mind</td>
+                        <td>Mitchel Dunford</td>
+                        <td>09 Oct 2021</td>
+                        <td>Medium</td>
+                        <td>PROD</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
+                              Edit
+                              <i class="typcn typcn-edit btn-icon-append"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm btn-icon-text">
+                              Delete
+                              <i class="typcn typcn-delete-outline btn-icon-append"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#D3</td>
+                        <td>Reactive</td>
+                        <td>Pei Canaday</td>
+                        <td>18 Dec 2021</td>
+                        <td>Low</td>
+                        <td>QA</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
+                              Edit
+                              <i class="typcn typcn-edit btn-icon-append"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm btn-icon-text">
+                              Delete
+                              <i class="typcn typcn-delete-outline btn-icon-append"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022
+                  <a class="text-muted" target="_blank">MLOps</a>. Allrights reserved.
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+ 
+  <!-- base:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+ 
+</html>
