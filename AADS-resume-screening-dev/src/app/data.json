@@ -1,0 +1,69 @@
+{
+    "profiles": [
+        {
+            "approve": 80,
+            "name": "Ankit Khanduri Resume",
+            "certification_score": 0.25,
+            "filename": "Ankit Khanduri Resume",
+            "identified_skills": "aws ",
+            "patent": "False",
+            "reject": 75,
+            "skill_score": 70,
+            "status": "File Processed",
+            "subject_score": 0,
+            "insight": "8+ years of experience in implementing and managing cloud domain and big data solutions"
+        },
+        {
+            "approve": 30,
+            "name": "HARSH SAXENA",
+            "certification_score": 0,
+            "filename": "HARSH SAXENA",
+            "identified_skills": null,
+            "patent": "False",
+            "reject": 35,
+            "skill_score": 25,
+            "status": "File Processed",
+            "subject_score": 0,
+            "insight": "ai architect with 4+ years of enterprise experience and 2\n5+ years in chatbots, artificial intelligence and data analytics domain experience includes retail, life sciences and telecom"
+        },
+        {
+            "approve": 20,
+            "name": "RAM SAXENA",
+            "certification_score": 0,
+            "filename": "HARSH SAXENA",
+            "identified_skills": null,
+            "patent": "False",
+            "reject": 35,
+            "skill_score": 25,
+            "status": "File Processed",
+            "subject_score": 0,
+            "insight": "ai architect with 4+ years of enterprise experience and 2\n5+ years in chatbots, artificial intelligence and data analytics domain experience includes retail, life sciences and telecom"
+        },
+        {
+            "approve": 46,
+            "name": "GOPAL SAXENA",
+            "certification_score": 0,
+            "filename": "HARSH SAXENA",
+            "identified_skills": null,
+            "patent": "False",
+            "reject": 35,
+            "skill_score": 45,
+            "status": "File Processed",
+            "subject_score": 0,
+            "insight": "ai architect with 4+ years of enterprise experience and 2\n5+ years in chatbots, artificial intelligence and data analytics domain experience includes retail, life sciences and telecom"
+        },
+        {
+            "approve": 90,
+            "name": "SHYAM SAXENA",
+            "certification_score": 0,
+            "filename": "HARSH SAXENA",
+            "identified_skills": null,
+            "patent": "False",
+            "reject": 35,
+            "skill_score": 90,
+            "status": "File Processed",
+            "subject_score": 0,
+            "insight": "ai architect with 4+ years of enterprise experience and 2\n5+ years in chatbots, artificial intelligence and data analytics domain experience includes retail, life sciences and telecom"
+        }
+    ]
+}

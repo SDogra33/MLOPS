@@ -1,0 +1,27 @@
+{
+  "Parameters": {
+    "DeployEnvironment": "dev",
+    "CloudFrontRequireAuth": "false",
+    "EmptyWebBucketOnDelete": "true",
+    "AppName": "resume-screening",
+    "CostCenter": "TBD",
+    "CostCenterApprover": "TBD",
+    "SystemOwner": "TBD",
+    "SystemCustodian": "TBD",
+    "PrimaryItContact": "TBD",
+    "Level1BusinessArea": "TBD",
+    "DataClassification": "Green",
+    "Hipaa": "No"
+  },
+  "Tags": {
+    "CostCenter": "TBD",
+    "CostCenterApprover": "TBD",
+    "SystemOwner": "TBD",
+    "SystemCustodian": "TBD",
+    "PrimaryItContact": "TBD",
+    "Level1BusinessArea": "TBD",
+    "DataClassification": "Green",
+    "Hipaa": "No"
+  },
+  "StackPolicy": {}
+}

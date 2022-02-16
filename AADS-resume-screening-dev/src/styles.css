@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: "DINPro";
+  src: local("DINPro"),
+    url(./assets/fonts/DINPro/DINPro-Medium_3437030311.otf) format("truetype");
+}
+
+/* @import "~@angular/material/prebuilt-themes"; */
+/* html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
